@@ -5,7 +5,6 @@ import {
   FaXTwitter,
   FaGithub,
   FaInstagram,
-  FaRss,
   FaLinkedinIn,
 } from 'react-icons/fa6';
 import { TbMailFilled } from 'react-icons/tb';
@@ -16,7 +15,7 @@ const YEAR = new Date().getFullYear();
 function SocialLink({ href, icon: Icon }) {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
-      <Icon />
+      <Icon size={24} />
     </a>
   );
 }
@@ -29,9 +28,6 @@ function SocialLinks() {
       <SocialLink href={socialLinks.instagram} icon={FaInstagram} />
       <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
       <SocialLink href={socialLinks.email} icon={TbMailFilled} />
-      <a href="/rss.xml" target="_self">
-        <FaRss />
-      </a>
     </div>
   );
 }
