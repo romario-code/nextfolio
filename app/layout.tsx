@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description: metaData.description,
     url: metaData.baseUrl,
     siteName: metaData.name,
-    locale: 'en_US',
+    locale: 'pt-BR',
     type: 'website',
   },
   robots: {

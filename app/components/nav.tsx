@@ -3,10 +3,9 @@ import { ThemeSwitch } from './theme-switch';
 import { metaData } from '../config';
 
 const navItems = {
-  '/about': { name: 'Sobre' },
   '/projects': { name: 'Projetos' },
-  '/articles': { name: 'Articles' },
-  '/sobre': { name: 'Sobre' },
+  '/blog': { name: 'Artigos' },
+  '/about': { name: 'Sobre' },
 };
 
 export function Navbar() {
@@ -16,9 +15,9 @@ export function Navbar() {
         <div className="flex items-center">
           <Link
             href="/"
-            className="text-3xl font-semibold tracking-tight hover:bg-accent hover:text-accent-foreground rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 p-1"
+            className="text-3xl font-semibold tracking-tight hover:bg-accent hover:text-accent-foreground rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 p-1 font-syne"
           >
-            {metaData.title}
+            {metaData.logoText}
           </Link>
         </div>
         <div className="flex flex-row mt-6 md:mt-0 md:ml-auto items-center overflow-scroll sm:overflow-auto">
@@ -31,7 +30,7 @@ export function Navbar() {
               {name}
             </Link>
           ))}
-          <div className='ml-3'>
+          <div className="ml-3">
             <ThemeSwitch />
           </div>
         </div>

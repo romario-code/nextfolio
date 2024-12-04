@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <section className="pt-16 pb-40">
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">Projects</h1>
+    <section className="pt-16 pb-40 flex flex-col h-[calc(100vh-160px)]">
+      <h1 className="mb-8 tracking-tight text-3xl font-bold font-syne">Projetos</h1>
       <div className="space-y-6">
         {projects.map((project, index) => (
           <a

@@ -1,9 +1,10 @@
 export const metaData = {
   baseUrl: 'https://nextfolio-template.vercel.app/',
-  title: 'R.',
+  title: 'Romário de Jesus dos Santos',
   name: 'romariojs94',
   ogImage: '/opengraph-image.png',
   description: 'Website create with nextjs and shadcn',
+  logoText: 'R.',
 };
 
 export const socialLinks = {
