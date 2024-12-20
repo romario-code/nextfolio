@@ -1,16 +1,18 @@
-import React from "react";
-import type { Metadata } from "next";
-import { projects } from "./project-data";
+import React from 'react';
+import type { Metadata } from 'next';
+import { projects } from './project-data';
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: "My Projects",
+  title: 'Projects',
+  description: 'My Projects',
 };
 
 export default function Projects() {
   return (
     <section className="pt-16 pb-40 flex flex-col h-[calc(100vh-160px)]">
-      <h1 className="mb-8 tracking-tight text-3xl font-bold font-syne">Projetos</h1>
+      <h1 className="mb-8 tracking-tight text-3xl font-bold font-syne">
+        Projects
+      </h1>
       <div className="space-y-6">
         {projects.map((project, index) => (
           <a

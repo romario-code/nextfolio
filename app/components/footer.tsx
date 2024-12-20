@@ -34,19 +34,11 @@ function SocialLinks() {
 
 export default function Footer() {
   return (
-    <footer className="w-full mr-auto ml-auto py-4">
+    <footer className="w-full mr-auto ml-auto py-6">
       <div className="max-w-[90vw] md:max-w-[70vw] w-full mx-auto">
         <small className="flex flex-col gap-2 sm:flex-row justify-between text-[#1C1C1C] dark:text-[#D4D4D4]">
           <div>
-            <time>© {YEAR}</time>{' '}
-            <a
-              className="no-underline"
-              href={socialLinks.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {metaData.title}
-            </a>
+            <time>© {YEAR}</time> <span>{metaData.title}</span>
           </div>
           <style jsx>{`
             @media screen and (max-width: 480px) {

@@ -26,7 +26,7 @@ export default function Page() {
             className="mt-5 text-sm flex-shrink-0 font-inter font-normal"
             variant="outline"
           >
-            Entre em contato
+            get in touch
             <ArrowRight />
           </Button>
         </Link>

@@ -2,17 +2,17 @@ import Link from 'next/link';
 import { formatDate, getBlogPosts } from 'app/lib/posts';
 
 export const metadata = {
-  title: 'Blog',
-  description: 'Nextfolio Blog',
+  title: 'Articles',
+  description: 'Nextfolio Articles',
 };
 
 export default function BlogPosts() {
   let allBlogs = getBlogPosts();
 
   return (
-    <section className='pt-16 pb-40 flex flex-col h-[calc(100vh-160px)]'>
+    <section className="pt-16 pb-40 flex flex-col h-[calc(100vh-160px)]">
       <h1 className="mb-8 text-3xl font-medium tracking-tight font-syne">
-        Artigos
+        Articles
       </h1>
       <div>
         {allBlogs
