@@ -13,8 +13,7 @@ const navItems = {
 
 export function Navbar() {
   return (
-    <div className="div flex justify-between items-center">
-      {/* // div principal */}
+    <div className="div flex justify-between flex-wrap items-center mt-4">
       <div className="logo">
         <Link
           href="/"
@@ -23,14 +22,14 @@ export function Navbar() {
           {metaData.logoText}
         </Link>
       </div>
-      <nav className="nav">
-        <div className="flex items-center justify-between sm:mt-6">
+      <nav className="mt-1 sm:mt-0 overflow-scroll md:overflow-auto">
+        <div className="flex items-center justify-between">
           <div className="flex flex-row md:ml-auto items-center overflow-scroll sm:overflow-auto">
             {Object.entries(navItems).map(([path, { name }]) => (
               <Link
                 key={path}
                 href={path}
-                className="uppercase text-[#8f9ba8] inline-flex items-center rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground pt-2 pb-2 pr-4 h-9 sm:px-5 sm:py-2 justify-start text-xs"
+                className="uppercase text-[#8f9ba8] inline-flex items-center rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground pt-2 pb-2 pr-4 pl-1 h-9 sm:px-5 sm:py-2 justify-start text-xs"
               >
                 {name}
               </Link>
