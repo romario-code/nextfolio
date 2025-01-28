@@ -11,7 +11,7 @@ export default function Page() {
         <h1 className="text-5xl font-bold tracking-tight mb-7 font-syne">
           Romário J Santos
         </h1>
-        <h2 className="text-sm font-semibold font-syne">
+        <h2 className="text-1xl font-normal font-inter">
           Passionate about technology, development, and design.
         </h2>
         <p className="text-sm mt-1 text-[#8F9BA8] font-inter font-normal">

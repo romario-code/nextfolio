@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./app/*"],
-      "@lib/*": ["./app/lib/*"]
+      "@/*": ["./*"],
+      "@lib/*": ["./lib/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

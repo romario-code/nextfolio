@@ -62,7 +62,7 @@ export default function Contact() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full p-2 rounded-lg border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 font-inter"
+            className="w-full p-2 rounded-lg border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:gray-200 font-inter"
           />
         </div>
 
@@ -77,7 +77,7 @@ export default function Contact() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full p-2 rounded-lg border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 font-inter"
+            className="w-full p-2 rounded-lg border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:gray-200 font-inter"
           />
         </div>
 
@@ -92,7 +92,7 @@ export default function Contact() {
             onChange={handleChange}
             required
             rows={4}
-            className="w-full p-2 rounded-lg border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 font-inter resize-none"
+            className="w-full p-2 rounded-lg border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:gray-200 font-inter resize-none"
           />
         </div>
 
