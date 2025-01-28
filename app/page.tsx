@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 export default function Page() {
   return (
-    <section className="max-w-[90vw] md:max-w-[70vw] mx-auto w-full flex flex-col justify-center h-screen">
+    <section className="max-w-[90vw] md:max-w-[70vw] mx-auto w-full flex flex-col justify-center h-[calc(100vh-120px)]">
       <div className="max-w-7xl">
         <h1 className="text-5xl font-bold tracking-tight mb-7 font-syne">
           Romário J Santos

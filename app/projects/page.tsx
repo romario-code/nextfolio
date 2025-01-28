@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <section className="pt-16 pb-40 flex flex-col h-screen">
+    <section className="pt-16 pb-40 flex flex-col h-[calc(100vh-120px)]">
       <h1 className="mb-8 tracking-tight text-3xl font-bold font-syne">
         Projects
       </h1>
