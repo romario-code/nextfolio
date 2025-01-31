@@ -45,7 +45,7 @@ export function Navbar({ name }: { name: string }) {
             {Object.entries(navItems).map(([path, { name }]) => (
               <Link
                 key={path}
-                href={`${path}`}
+                href={path as "/" | "/en" | "/pt"}
                 className="uppercase text-[#8f9ba8] flex flex-col items-start rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground pt-1 pb-1 pr-4 pl-1 h-9 sm:px-5 sm:py-2 justify-start text-xs"
               >
                 {name}
@@ -60,7 +60,7 @@ export function Navbar({ name }: { name: string }) {
             {Object.entries(navItems).map(([path, { name }]) => (
               <Link
                 key={path}
-                href={`${path}`}
+                href={path as "/" | "/en" | "/pt"}
                 className="uppercase text-[#8f9ba8] inline-flex items-center rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground pt-2 pb-2 pr-4 pl-1 h-9 sm:px-5 sm:py-2 justify-start text-xs"
               >
                 {name}
