@@ -1,8 +1,10 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function Contact() {
+  const t = useTranslations('contact');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -46,14 +48,14 @@ export default function Contact() {
   return (
     <section className="pt-16 pb-24 flex flex-col">
       <h1 className="mb-2 text-3xl font-medium tracking-tight font-syne">
-        Contact
+        {t('title')}
       </h1>
-      <p className='text-lg font-inter text-[#8f9ba8] mb-8'>Just talk about new projects, ideas, or just say hi!</p>
+      <p className='text-lg font-inter text-[#8f9ba8] mb-8'>{t('description')}</p>
 
       <form onSubmit={handleSubmit} className="max-w-lg w-full">
         <div className="mb-4">
           <label htmlFor="name" className="block text-sm font-inter mb-2 text-[#8f9ba8]">
-            Name
+          {t('name')}
           </label>
           <input
             type="text"
@@ -68,7 +70,7 @@ export default function Contact() {
 
         <div className="mb-4">
           <label htmlFor="email" className="block text-sm font-inter mb-2 text-[#8f9ba8]">
-            Email
+            {t('email')}
           </label>
           <input
             type="email"
@@ -83,7 +85,7 @@ export default function Contact() {
 
         <div className="mb-4">
           <label htmlFor="message" className="block text-sm font-inter mb-2 text-[#8f9ba8]">
-            Message
+            {t('message')}
           </label>
           <textarea
             id="message"
@@ -101,11 +103,11 @@ export default function Contact() {
           disabled={status === 'sending'}
           className="bg-[#262626] text-white px-6 py-2 rounded-lg font-inter hover:bg-dark-600 transition-colors disabled:opacity-50"
         >
-          {status === 'sending' ? 'Sending...' : 'Send Message'}
+          {status === `${t('sending')}` ? `${t('sending2')}` : t('send')}
         </button>
 
         {status === 'sent' && (
-          <p className="mt-4 text-green-500 font-inter text-sm">Message sent successfully!</p>
+          <p className="mt-4 text-green-500 font-inter text-sm">{t('sent')}</p>
         )}
       </form>
     </section>

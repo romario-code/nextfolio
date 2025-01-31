@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 import {
   FaXTwitter,
   FaInstagram,
   FaThreads,
   FaLinkedinIn,
   FaGithub,
-  FaEnvelope
-} from 'react-icons/fa6';
-import { metaData, socialLinks } from 'app/config';
+  FaEnvelope,
+} from "react-icons/fa6";
+import { metaData, socialLinks } from "@/app/[locale]/config";
 
 const YEAR = new Date().getFullYear();
 
@@ -32,9 +32,9 @@ function SocialLinks() {
       <SocialLink href={socialLinks.email} icon={FaEnvelope} />
     </div>
   );
-} 
+}
 
-export default function Footer() {  
+export default function Footer() {
   return (
     <footer className="w-full mr-auto ml-auto py-6">
       <div className="max-w-[90vw] md:max-w-[70vw] w-full mx-auto">

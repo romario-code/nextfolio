@@ -1,0 +1,37 @@
+{
+  "HomePage": {
+    "title": "Romário J Santos",
+    "about": "Work, Hobby, Build.",
+    "description": "I enjoy crafting things for the web."
+  },
+  "Navbar": {
+    "project": "Projects",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "projectsPage": {
+    "project": "Projetos",
+    "book-scanner": {
+      "title": "Livro Scanner",
+      "description": "Book scanner built with React Native, Expo Go and MySQL. The project allows creating, reading, updating and deleting books, using the barcode scanner integrated with Google Books API."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Get in touch with me",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "sent": "Message sent successfully!"
+  },
+  "about": {
+    "salute": "Hi,",
+    "title": "About me",
+    "name": "My name is Romário",
+    "description": "Passionate about technology, development, and design."
+  }
+}
