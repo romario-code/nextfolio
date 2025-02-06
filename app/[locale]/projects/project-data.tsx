@@ -5,28 +5,25 @@ export interface Project {
   github: string;
   badgeColor: string;
   livePage: string;
-  BadgeStatus: string;
   website: string;
 }
 
 // data/projects.ts
 export const projectsDom: Project[] = [
   {
-    id: 'book-scanner',
-    year: 2025,
-    badgeColor: 'secondary',
-    BadgeStatus: 'Em desenvolvimento',
+    id: 'tattoo-shop',
     livePage: '',
-    github: "https://github.com/romariojs94/libris-tracker-app",
-    website: "#",
+    badgeColor: 'secondary',
+    year: 2025,
+    github: "https://github.com/romariojs94/mp-tattoo-shop-website-com-next-js",
+    website: "https://mp-tattoo-shop-website-com-next-js.vercel.app",
   },
   {
     id: 'book-scanner',
-    livePage: '',
-    badgeColor: 'destructive',
-    BadgeStatus: 'Concluído',
     year: 2024,
+    badgeColor: 'destructive',
+    livePage: '',
     github: "https://github.com/romariojs94/libris-tracker-app",
-    website: "",
+    website: "#",
   },
 ];

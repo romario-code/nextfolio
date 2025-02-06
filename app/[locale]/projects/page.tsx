@@ -19,26 +19,26 @@ export default function ProjectsList() {
   return (
     <section className="pt-16 pb-40 flex flex-col container">
       <h2 className={`mb-8 tracking-tight text-3xl font-bold text-neutral-900 dark:text-neutral-200 ${syne.className}`}>
-        {t('project')}
+        {t('projects')}
       </h2>
       <div className="space-y-6">
         {projectsDom.map((project, index) => (
           <div className="flex flex-col">
-            <div className="w-full flex gap-1 md:gap-0 flex-wrap justify-between items-baseline">
+            <div className="w-full flex flex-col-reverse md:flex-row gap-1 md:gap-0 flex-wrap justify-between items-baseline">
               <div className='flex flex-col gap-2'>
                 <h3 className="font-medium text-2xl text-neutral-600 dark:text-neutral-200">
                   {t(`${project.id}.title`)}
                 </h3>
-                <Badge variant={project.badgeColor as "destructive" | "default" | "secondary" | "outline" | null | undefined} className='flex w-fit justify-center py-1 px-2'>{project.BadgeStatus}</Badge>
+                <Badge variant={project.badgeColor as "destructive" | "default" | "secondary" | "outline" | null | undefined} className='flex w-fit justify-center py-1 px-2'>{t(`${project.id}.BadgeStatus`)}</Badge>
               </div>
-              <span className="text-neutral-600 dark:text-neutral-200 tabular-nums text-sm">
+              <span className="bg-neutral-900  py-2 px-4 rounded-md dark:text-neutral-200 tabular-nums text-sm">
                 {project.year}
               </span>
             </div>
             <p className="prose prose-neutral pt-3 text-neutral-600 dark:text-neutral-200">{t(`${project.id}.description`)}</p>
             <div className='flex items-center gap-2 mt-2 -ml-2'>
               <Link href={project.website}>
-              <Button size={'default'} variant={'link'}>
+              <Button size={'default'} variant={'secondary'}>
                 {t(`${project.id}.github`)} <FaGithub />
                 </Button>
               </Link>

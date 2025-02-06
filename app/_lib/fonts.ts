@@ -7,6 +7,6 @@ export const inter =  Inter({
 });
 export const syne = Syne({
   subsets: ["latin"],
-  weight: ["400", "600", '700', '800'],
+  weight: ["400", '700', '800'],
 });
  

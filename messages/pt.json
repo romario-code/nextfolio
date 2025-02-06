@@ -1,8 +1,7 @@
 {
   "HomePage": {
-    "title": "Romário J. Santos",
-    "about": "Work, Hobby, Build.",
-    "description": "Gosto de criar coisas para a web."
+    "title": "Feito para criar & compartilhar.",
+    "about-more": "Veja meus projetos"
   },
   "Navbar": {
     "project": "Projetos",
@@ -10,18 +9,20 @@
     "about": "Sobre",
     "contact": "Contato"
   },
-  "projectsPage": {
-    "project": "Projetos",
+  "projectsPage": {  
+    "projects": "Projetos",
     "book-scanner": {
       "title": "BookScanner App (React Native)",
       "link": "Ir para o site",
-      "github": "Ir para o github",
+      "github": "Ir para o GitHub",
+      "BadgeStatus": "Em desenvolvimento",
       "description": "Aplicativo de scanner de livros construído com React Native, Expo Go e Supabase. O projeto permite scannear o código de barra do integrado com a API do Google Books."
     },
     "tattoo-shop": {
       "title": "Projeto Tattoo Shop - Website com Next.js",
       "link": "Ir para o site",
-      "github": "Ir para o github",
+      "github": "Ir para o GitHub",
+      "BadgeStatus": "Concluído",
       "description": "Página comercial para um tatuador hipotético chamado Sandro Luz. um projeto Next.js."
     }
   },
