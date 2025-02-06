@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-
+import { syne } from '../../_lib/fonts';	
 export default function Contact() {
   const t = useTranslations('contact');
   const [formData, setFormData] = useState({
@@ -47,14 +47,14 @@ export default function Contact() {
 
   return (
     <section className="pt-16 pb-24 flex flex-col">
-      <h1 className="mb-2 text-3xl font-medium tracking-tight font-syne">
+      <h1 className={`mb-2 text-3xl font-semibold tracking-tight ${syne.className}`}>
         {t('title')}
       </h1>
-      <p className='text-lg font-inter text-[#8f9ba8] mb-8'>{t('description')}</p>
+      <p className='text-lg font-inter text-neutral-600 dark:text-neutral-50 mb-8'>{t('description')}</p>
 
       <form onSubmit={handleSubmit} className="max-w-lg w-full">
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-inter mb-2 text-[#8f9ba8]">
+          <label htmlFor="name" className="block text-sm font-inter mb-2 text-neutral-600 dark:text-neutral-200">
           {t('name')}
           </label>
           <input
@@ -69,7 +69,7 @@ export default function Contact() {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-inter mb-2 text-[#8f9ba8]">
+          <label htmlFor="email" className="block text-sm font-inter mb-2 text-neutral-600 dark:text-neutral-200">
             {t('email')}
           </label>
           <input
@@ -84,7 +84,7 @@ export default function Contact() {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="message" className="block text-sm font-inter mb-2 text-[#8f9ba8]">
+          <label htmlFor="message" className="block text-sm font-inter mb-2 text-neutral-600 dark:text-neutral-200">
             {t('message')}
           </label>
           <textarea
@@ -101,7 +101,7 @@ export default function Contact() {
         <button
           type="submit"
           disabled={status === 'sending'}
-          className="bg-[#262626] text-white px-6 py-2 rounded-lg font-inter hover:bg-dark-600 transition-colors disabled:opacity-50"
+          className="text-white bg-black dark:bg-neutral-700 px-6 py-2 rounded-lg font-inter hover:bg-neutral-900 hover:dark:bg-neutral-800 transition-colors disabled:opacity-50"
         >
           {status === `${t('sending')}` ? `${t('sending2')}` : t('send')}
         </button>

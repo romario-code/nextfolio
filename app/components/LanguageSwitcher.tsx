@@ -42,8 +42,8 @@ export default function LocaleSwitcher() {
 			onClick={toggleLocale}
 			disabled={isPending}
 			className={clsx(
-				'relative inline-flex items-center h-6 rounded-full w-11 bg-gray-700',
-				isPortuguese && 'bg-gray-500',
+				'relative inline-flex items-center h-6 rounded-full w-11 bg-neutral-600',
+				isPortuguese && 'bg-neutral-600',
 				isPending && 'opacity-50'
 			)}
 		>

@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 ::selection {
-  background-color: #000000;
-  color: #fefefe;
+  background-color: var(--accent);
+  color: var(--accent);
 }
 
 @layer base {
   :root {
+    color: #121212;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
@@ -35,6 +36,7 @@
     --radius: 0.5rem;
   }
   .dark {
+    color: #ffffff;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -65,10 +67,6 @@ html {
   min-width: 360px;
 }
 
-.prose {
-  @apply text-[#000000] dark:text-[#D4D4D4];
-}
-
 .prose .anchor {
   @apply absolute invisible;
   margin-left: -1em;
@@ -83,24 +81,20 @@ html {
 }
 
 .prose a {
-  @apply transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em] font-normal text-[#000000] dark:text-[#D4D4D4];
+  @apply dark:decoration-neutral-300 decoration-neutral-300;
 }
 
 .prose a:hover {
-  @apply dark:decoration-neutral-400 decoration-neutral-600;
+  @apply dark:decoration-neutral-300 decoration-neutral-300;
 }
 
 .prose .anchor:after {
-  @apply text-neutral-300 dark:text-neutral-700;
+  @apply text-neutral-400 dark:text-neutral-700;
   content: '#';
 }
 
 .prose *:hover > .anchor {
   @apply visible;
-}
-
-.prose pre {
-  @apply bg-[#F7F7F7] dark:bg-[#181818] rounded-lg overflow-x-auto;
 }
 
 .prose code {

@@ -1,27 +1,16 @@
 import "./global.css";
 import type { Metadata } from "next";
 import { Navbar } from "../components/nav";
-import { Inter, Syne } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "../components/footer";
 import { ThemeProvider } from "../components/theme-switch";
 import { metaData } from "./config";
-
+import { inter } from "../_lib/fonts"
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
-const syne = Syne({
-  subsets: ["latin"],
-  variable: "--font-syne",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(metaData.baseUrl),
@@ -66,16 +55,14 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Ensure that the incoming `locale` is valid
+
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
   return (
-    <html lang={locale} className={`${inter.variable} ${syne.variable}`}>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         <link
           rel="alternate"
@@ -96,7 +83,7 @@ export default async function RootLayout({
           title="JSON Feed"
         />
       </head>
-      <body className="antialiased max-h-full max-w-[90vw] md:max-w-[70vw] mx-auto font-inter">
+      <body className="container">
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"

@@ -5,6 +5,8 @@ import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { MenuIcon } from "lucide-react";
 
+import { inter } from "../_lib/fonts";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -22,7 +24,7 @@ export function Navbar({ name }: { name: string }) {
     "/about": { name: t("about") },
   };
   return (
-    <div className="div flex justify-between flex-wrap items-center mt-4">
+    <div className="flex justify-between flex-wrap items-center mt-4">
       <div className="logo">
         <Link
           href="/"
@@ -46,7 +48,7 @@ export function Navbar({ name }: { name: string }) {
               <Link
                 key={path}
                 href={path as "/" | "/en" | "/pt"}
-                className="uppercase text-[#8f9ba8] flex flex-col items-start rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground pt-1 pb-1 pr-4 pl-1 h-9 sm:px-5 sm:py-2 justify-start text-xs"
+                className="uppercase flex flex-col items-start rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground pt-1 pb-1 pr-4 pl-1 h-9 sm:px-5 sm:py-2 justify-start text-xs"
               >
                 {name}
               </Link>
@@ -61,7 +63,7 @@ export function Navbar({ name }: { name: string }) {
               <Link
                 key={path}
                 href={path as "/" | "/en" | "/pt"}
-                className="uppercase text-[#8f9ba8] inline-flex items-center rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground pt-2 pb-2 pr-4 pl-1 h-9 sm:px-5 sm:py-2 justify-start text-xs"
+                className={`uppercase text-neutral-600 dark:text-neutral-300 inline-flex items-center rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground pt-2 pb-2 pr-4 pl-1 h-9 sm:px-5 sm:py-2 justify-start text-xs ${inter.className}`}
               >
                 {name}
               </Link>

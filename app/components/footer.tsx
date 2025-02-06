@@ -10,6 +10,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa6";
 import { metaData, socialLinks } from "@/app/[locale]/config";
+import { inter } from "@/app/_lib/fonts";
 
 const YEAR = new Date().getFullYear();
 
@@ -23,7 +24,7 @@ function SocialLink({ href, icon: Icon, size = 16 }) {
 
 function SocialLinks() {
   return (
-    <div className="flex text-lg gap-4 float-right transition-opacity duration-300 hover:opacity-90">
+    <div className="flex text-lg gap-4 float-right transition-opacity duration-300">
       <SocialLink href={socialLinks.twitter} icon={FaXTwitter} />
       <SocialLink href={socialLinks.instagram} icon={FaInstagram} />
       <SocialLink href={socialLinks.threads} icon={FaThreads} />
@@ -36,10 +37,9 @@ function SocialLinks() {
 
 export default function Footer() {
   return (
-    <footer className="w-full mr-auto ml-auto py-6">
-      <div className="max-w-[90vw] md:max-w-[70vw] w-full mx-auto">
-        <small className="flex flex-col gap-2 sm:flex-row justify-between text-[#1C1C1C] dark:text-[#D4D4D4]">
-          <div>
+    <footer className="w-full py-6">
+        <small className="flex flex-col gap-2 sm:flex-row justify-between">
+          <div className={`text-neutral-600 font-normal dark:text-neutral-300 ${inter.className}`}>
             <time>&copy; {YEAR} - </time> <span>{metaData.title}</span>
           </div>
           <style jsx>{`
@@ -52,7 +52,6 @@ export default function Footer() {
           `}</style>
           <SocialLinks />
         </small>
-      </div>
     </footer>
   );
 }
