@@ -83,7 +83,7 @@ export default async function RootLayout({
           title="JSON Feed"
         />
       </head>
-      <body className="container">
+      <body>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"

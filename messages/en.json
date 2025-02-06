@@ -13,8 +13,16 @@
   "projectsPage": {
     "project": "Projetos",
     "book-scanner": {
-      "title": "Livro Scanner",
-      "description": "Book scanner built with React Native, Expo Go and MySQL. The project allows creating, reading, updating and deleting books, using the barcode scanner integrated with Google Books API."
+      "title": "LivroScanner (React Native)",
+      "link": "Go to Webiste",
+      "github": "Go to Github",
+      "description": "BookScanner App (React Native) built with React Native, Expo Go and Supabase. The project allows you to scan the barcode of the book and integrates with the Google Books API."
+    },
+    "tattoo-shop": {
+      "title": "Tattoo Shop Project - Website with Next.js",
+      "link": "Go to Webiste",
+      "github": "Go to Github",
+      "description": "Commercial page for a hypothetical tattoo artist named Sandro Luz. A Next.js project."
     }
   },
   "contact": {

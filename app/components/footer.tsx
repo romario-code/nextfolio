@@ -37,7 +37,7 @@ function SocialLinks() {
 
 export default function Footer() {
   return (
-    <footer className="w-full py-6">
+    <footer className="container w-full py-6">
         <small className="flex flex-col gap-2 sm:flex-row justify-between">
           <div className={`text-neutral-600 font-normal dark:text-neutral-300 ${inter.className}`}>
             <time>&copy; {YEAR} - </time> <span>{metaData.title}</span>

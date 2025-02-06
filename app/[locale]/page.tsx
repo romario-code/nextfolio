@@ -8,7 +8,7 @@ import { syne, inter } from '../_lib/fonts';
 export default function Page() {
   const t = useTranslations('HomePage');
   return (
-    <section className="w-full flex flex-col justify-center h-[70vh] md:h-[calc(100vh-120px)]">
+    <section className="container flex flex-col justify-center h-[70vh] md:h-[calc(100vh-120px)]">
       <div className="">
         <h1 className="text-5xl font-bold tracking-tight mb-3">
           Romário J. Santos

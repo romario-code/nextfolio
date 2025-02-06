@@ -13,8 +13,16 @@
   "projectsPage": {
     "project": "Projetos",
     "book-scanner": {
-      "title": "Livro magico",
-      "description": "Book scanner built with React Native, Expo Go and MySQL. The project allows creating, reading, updating and deleting books, using the barcode scanner integrated with Google Books API."
+      "title": "BookScanner App (React Native)",
+      "link": "Ir para o site",
+      "github": "Ir para o github",
+      "description": "Aplicativo de scanner de livros construído com React Native, Expo Go e Supabase. O projeto permite scannear o código de barra do integrado com a API do Google Books."
+    },
+    "tattoo-shop": {
+      "title": "Projeto Tattoo Shop - Website com Next.js",
+      "link": "Ir para o site",
+      "github": "Ir para o github",
+      "description": "Página comercial para um tatuador hipotético chamado Sandro Luz. um projeto Next.js."
     }
   },
   "contact": {
@@ -34,4 +42,4 @@
     "name": "Meu nome é Romário",
     "description": "Estudande de Análise e desenvimento de sistemas, gosto de tecnologia e desenvolvimento web. adoro criar coisas para a web, desde sites até aplicações web. Atualmente estou estudando Next.js 15, Tailwind, Node.js e MySQL."
   }
-} 
+}

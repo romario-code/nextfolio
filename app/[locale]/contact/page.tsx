@@ -46,7 +46,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="pt-16 pb-24 flex flex-col">
+    <section className="pt-16 pb-24 flex flex-col container">
       <h1 className={`mb-2 text-3xl font-semibold tracking-tight ${syne.className}`}>
         {t('title')}
       </h1>

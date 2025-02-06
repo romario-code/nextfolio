@@ -22,7 +22,7 @@ const skills = [
 export default function About() {
   const t = useTranslations('about');
   return (
-    <section className="pt-16 pb-40 flex flex-col">
+    <section className="pt-16 pb-40 flex flex-col container">
       <h2 className={`text-3xl mb-8 font-bold tracking-tight text-neutral-600 dark:text-neutral-50 ${syne.className}`}>
         {t('title')}
       </h2>
