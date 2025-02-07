@@ -12,7 +12,7 @@ export default function Page() {
       <div>
      <div>
      </div>
-        <span className={`text-base font-bold text-stone-400 ${syne.className}`}>Romário de Jesus dos Santos</span>
+        <span className={`text-base font-bold text-stone-500 dark:text-stone-400 ${syne.className}`}>Romário de Jesus dos Santos</span>
         <h1 className={`text-2xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-3 ${syne.className}`}>
         {t('title')}
         </h1>

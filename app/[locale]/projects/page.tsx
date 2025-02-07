@@ -31,7 +31,7 @@ export default function ProjectsList() {
                 </h3>
                 <Badge variant={project.badgeColor as "destructive" | "default" | "secondary" | "outline" | null | undefined} className='flex w-fit justify-center py-1 px-2'>{t(`${project.id}.BadgeStatus`)}</Badge>
               </div>
-              <span className="bg-neutral-900  py-2 px-4 rounded-md dark:text-neutral-200 tabular-nums text-sm">
+              <span className="dark:bg-neutral-900 bg-neutral-200 text-neutral-600  py-2 px-4 rounded-md dark:text-neutral-200 tabular-nums text-sm">
                 {project.year}
               </span>
             </div>
