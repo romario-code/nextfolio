@@ -16,7 +16,7 @@ export const projectsDom: Project[] = [
     badgeColor: 'secondary',
     year: 2025,
     github: "https://github.com/romariojs94/mp-tattoo-shop-website-com-next-js",
-    website: "https://mp-tattoo-shop-website-com-next-js.vercel.app",
+    website: "https://tattoo-shop-website-com-next-js.vercel.app",
   },
   {
     id: 'book-scanner',
