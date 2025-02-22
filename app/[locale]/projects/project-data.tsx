@@ -4,7 +4,6 @@ export interface Project {
   year: number;
   github: string;
   badgeColor: string;
-  livePage: string;
   website: string;
 }
 
@@ -12,18 +11,16 @@ export interface Project {
 export const projectsDom: Project[] = [
   {
     id: 'tattoo-shop',
-    livePage: '',
     badgeColor: 'secondary',
     year: 2025,
-    github: "https://github.com/romariojs94/mp-tattoo-shop-website-com-next-js",
+    github: "https://github.com/if-romario/mp-tattoo-shop-website-com-next-js",
     website: "https://tattoo-shop-website-com-next-js.vercel.app",
   },
   {
     id: 'book-scanner',
     year: 2024,
     badgeColor: 'destructive',
-    livePage: '',
-    github: "https://github.com/romariojs94/libris-tracker-app",
+    github: "https://github.com/if-romario/libris-tracker-app",
     website: "#",
   },
 ];

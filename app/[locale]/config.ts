@@ -9,9 +9,9 @@ export const metaData = {
 
 export const socialLinks = {
   twitter: 'https://x.com/if_romario',
-  github: 'https://github.com/if_romario',
+  github: 'https://github.com/if-romario',
   instagram: 'https://www.instagram.com/if_romario',
   threads: 'https://www.instagram.com/if_romario',
-  linkedin: 'https://www.linkedin.com/in/if_romario',
+  linkedin: 'https://www.linkedin.com/in/if-romario',
   email: 'mailto:romariojs94@proton.me',
 };

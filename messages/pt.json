@@ -6,41 +6,34 @@
   "Navbar": {
     "project": "Projetos",
     "blog": "Artigos",
-    "about": "Sobre",
-    "contact": "Contato"
+    "about": "Sobre"
   },
-  "projectsPage": {  
+  "projectsPage": {
     "projects": "Projetos",
     "book-scanner": {
       "title": "BookScanner App (React Native)",
       "link": "Ir para o site",
       "github": "Ir para o GitHub",
       "BadgeStatus": "Em desenvolvimento",
-      "description": "Aplicativo de scanner de livros construído com React Native, Expo Go e Supabase. O projeto permite scannear o código de barra do integrado com a API do Google Books."
+      "description": "Aplicativo para digitalização e gestão de livros, com um mini controle de estoque. Desenvolvido com React Native, Expo Go e Supabase, e integrado à API do Google Books para enriquecer os dados dos livros cadastrados. Veja mais detalhes no GitHub."
     },
     "tattoo-shop": {
       "title": "Projeto Tattoo Shop - Website com Next.js",
       "link": "Ir para o site",
       "github": "Ir para o GitHub",
       "BadgeStatus": "Concluído",
-      "description": "Página comercial para um tatuador hipotético chamado Sandro Luz. um projeto Next.js."
+      "description": "Página comercial para um tatuador hipotético chamado Sandro Luz. Um projeto Next.js."
     }
   },
-  "contact": {
-    "title": "Contato",
-    "description": "Entre em contato comigo",
-    "name": "Nome",
-    "email": "Email",
-    "phone": "Telefone",
-    "message": "Mensagem",
-    "sending": "Enviando",
-    "sending2": "Enviando...",
-    "send": "Enviar Mensagem"
-  },
   "about": {
-    "title": "Sobre mim",
+    "title": "Sobre",
     "salute": "Olá,",
-    "name": "Meu nome é Romário",
-    "description": "Estudande de Análise e desenvimento de sistemas, gosto de tecnologia e desenvolvimento web. adoro criar coisas para a web, desde sites até aplicações web. Atualmente estou estudando Next.js 15, Tailwind, Node.js e MySQL."
+    "name": "Meu nome é Romário!",
+    "description": "Sou Desenvolvedor Full Stack com experiência em React, Node.js, PHP e MySQL. Já atuei no desenvolvimento de interfaces dinâmicas e integrações de APIs em ambiente de startup. Possuo também experiência em marketing, gestão de conteúdo para YouTube e atendimento ao cliente."
+  },
+  "callToAction": {
+    "title": "Vamos contruir algo juntos?",
+    "description": "Se você tem algum projeto em mente, sinta-se à vontade para me enviar uma mensagem.",
+    "button": "Fale comigo"
   }
 }

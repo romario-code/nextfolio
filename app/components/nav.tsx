@@ -20,7 +20,6 @@ export function Navbar({ name }: { name: string }) {
   const t = useTranslations("Navbar");
   const navItems = {
     "/projects": { name: t("project") },
-    "/contact": { name: t("contact") },
     "/about": { name: t("about") },
   };
   return (
@@ -52,7 +51,7 @@ export function Navbar({ name }: { name: string }) {
                 <Link
                   key={path}
                   href={path as "/" | "/en" | "/pt"}
-                  className="uppercase text-neutral-600 dark:text-neutral-300 flex flex-col items-center rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground justify-start text-sm py-1 px-2"
+                  className="uppercase text-neutral-600 dark:text-neutral-300 flex flex-col items-center rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground justify-start text-sm p-2 px-4"
                 >
                   {name}
                 </Link>

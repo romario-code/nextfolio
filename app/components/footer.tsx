@@ -10,7 +10,8 @@ import {
   FaEnvelope,
 } from "react-icons/fa6";
 import { metaData, socialLinks } from "@/app/[locale]/config";
-import { inter } from "@/app/_lib/fonts";
+import { syne } from "@/app/_lib/fonts";
+import Link from "next/link";
 
 const YEAR = new Date().getFullYear();
 
@@ -37,12 +38,12 @@ function SocialLinks() {
 
 export default function Footer() {
   return (
-    <footer className="container w-full py-6">
-        <small className="flex flex-col gap-2 sm:flex-row justify-between">
-          <div className={`text-neutral-600 font-normal dark:text-neutral-300 ${inter.className}`}>
-            <time>&copy; {YEAR} - </time> <span>{metaData.title}</span>
-          </div>
-          <style jsx>{`
+    <footer className="container w-full py-6 grid gap-4">
+      <small className="flex flex-col gap-2 sm:flex-row justify-between">
+        <div className={`text-neutral-600 font-normal dark:text-neutral-300`}>
+          <time>&copy; {YEAR} - </time> <span>{metaData.title}</span>
+        </div>
+        <style jsx>{`
             @media screen and (max-width: 480px) {
               article {
                 padding-top: 2rem;
@@ -50,8 +51,8 @@ export default function Footer() {
               }
             }
           `}</style>
-          <SocialLinks />
-        </small>
-    </footer>
+        <SocialLinks />
+      </small>
+    </footer >
   );
 }

@@ -83,7 +83,7 @@ export default async function RootLayout({
           title="JSON Feed"
         />
       </head>
-      <body>
+      <body className="min-h-screen flex flex-col justify-between">
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"
@@ -96,8 +96,8 @@ export default async function RootLayout({
               {children}
               <Analytics />
               <SpeedInsights />
-              <Footer />
             </main>
+            <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

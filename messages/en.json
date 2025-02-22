@@ -6,8 +6,7 @@
   "Navbar": {
     "project": "Projects",
     "blog": "Blog",
-    "about": "About",
-    "contact": "Contact"
+    "about": "About"
   },
   "projectsPage": {
     "projects": "Projects",
@@ -16,7 +15,7 @@
       "link": "Go to Webiste",
       "github": "Go to GitHub",
       "BadgeStatus": "In development",
-      "description": "BookScanner App (React Native) built with React Native, Expo Go and Supabase. The project allows you to scan the barcode of the book and integrates with the Google Books API."
+      "description": "App for scanning and managing books, with a mini inventory control. Developed with React Native, Expo Go and Supabase, and integrated with the Google Books API to enrich the data of the registered books. See more details on GitHub."
     },
     "tattoo-shop": {
       "title": "Tattoo Shop Project - Website with Next.js",
@@ -26,21 +25,15 @@
       "description": "Commercial page for a hypothetical tattoo artist named Sandro Luz. A Next.js project."
     }
   },
-  "contact": {
-    "title": "Contact",
-    "description": "Get in touch with me",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "message": "Message",
-    "send": "Send",
-    "sending": "Sending...",
-    "sent": "Message sent successfully!"
-  },
   "about": {
     "salute": "Hi,",
-    "title": "About me",
-    "name": "My name is Romário",
-    "description": "Passionate about technology, development, and design."
+    "title": "About",
+    "name": "My name is Romário!",
+    "description": "I'm a Full Stack Developer with experience in React, Node.js, PHP and MySQL. I have worked on the development of dynamic interfaces and API integrations in a startup environment. I also have experience in marketing, content management for YouTube and customer service."
+  },
+  "callToAction": {
+    "title": "Let's build something together?",
+    "description": "If you have a project in mind, feel free to send me a message.",
+    "button": "Contact me"
   }
 }
