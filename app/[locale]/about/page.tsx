@@ -6,7 +6,7 @@ import { syne } from '../../_lib/fonts';
 import CallToAction from '@/app/components/CallToAction';
 export const metadata: Metadata = {
   title: 'About',
-  description: 'About Nextfolio',
+  description: 'About Romário de Jesus dos Santos',
 };
 
 
@@ -28,7 +28,7 @@ export default function About() {
         {t('title')}
       </h2>
       <h3 className={`text-2xl mb-4 font-bold text-neutral-600 dark:text-neutral-50 ${syne.className}`}>{t('salute')} <br /> {t('name')}</h3>
-      <p className="text-sm sm:text-lg font-normal max-w-3xl text-neutral-700 dark:text-neutral-200">
+      <p className="text-sm sm:text-base font-normal max-w-3xl text-neutral-700 dark:text-neutral-200 text-balance">
         {t('description')}
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-12">
@@ -36,7 +36,7 @@ export default function About() {
           <div key={skill.name} className="p-4 rounded-md border border-neutral-300 bg-black-700/60 hover:border-neutral-400 transition-colors">
             <h4 className={`font-bold text-xl text-neutral-900 dark:text-neutral-200 ${syne.className}`}>{skill.name}</h4>
             <span className="text-sm font-normal text-neutral-600 dark:text-neutral-900">{skill.category}</span>
-          </div> 
+          </div>
         ))}
       </div>
       <CallToAction />

@@ -61,7 +61,7 @@ export function Navbar({ name }: { name: string }) {
         </DropdownMenu>
       </div>
       <nav className="mt-1 sm:mt-0 overflow-scroll md:overflow-auto hidden md:flex">
-        <div className="flex items-center justify-between">
+        <div className="flex gap-2 items-center justify-between">
           <div className="flex-row md:ml-auto items-center overflow-scroll sm:overflow-auto">
             {Object.entries(navItems).map(([path, { name }]) => (
               <Link

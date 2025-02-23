@@ -7,9 +7,9 @@ import { useTranslations } from 'next-intl';
 export default function Hero() {
     const t = useTranslations('HomePage');
     return (
-        <section className="container w-full tracking-widest">
+        <section className="container w-full">
             <span className={`text-sm font-bold text-stone-500 dark:text-stone-400 ${syne.className}`}>Romário de Jesus dos Santos</span>
-            <h1 className={`text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold mb-3 text-balance ${syne.className}`}>
+            <h1 className={`text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold mb-3 text-balance ${syne.className}`}>
                 {t('title')}
             </h1>
             <h2 className={`text-xl font-bold dark:text-neutral-50 capitalize ${syne.className}`}>Build, Hobby, Learn</h2>
