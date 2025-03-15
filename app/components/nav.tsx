@@ -23,7 +23,7 @@ export function Navbar({ name }: { name: string }) {
     "/about": { name: t("about") },
   };
   return (
-    <div className="flex justify-between flex-wrap items-center mt-4 container">
+    <header className="flex justify-between flex-wrap items-center mt-2 sm:mt-4 container">
       <Link
         href="/"
         className={`inline-flex text-3xl font-semibold tracking-tight hover:bg-accent hover:text-accent-foreground rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 p-1 font-syne ${syne.className}`}
@@ -38,8 +38,7 @@ export function Navbar({ name }: { name: string }) {
         <DropdownMenu>
           <DropdownMenuTrigger>
             <MenuIcon
-              size={38}
-              className="flex flex-col items-center gap-2 font-heading text-lg md:hidden"
+              className="flex flex-col items-center gap-2 font-heading size-6 sm:size-8 text-lg md:hidden"
             />
           </DropdownMenuTrigger>
           <DropdownMenuContent className="mr-4">
@@ -79,6 +78,6 @@ export function Navbar({ name }: { name: string }) {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 }

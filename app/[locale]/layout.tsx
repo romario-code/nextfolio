@@ -83,7 +83,7 @@ export default async function RootLayout({
           title="JSON Feed"
         />
       </head>
-      <body className="min-h-screen flex flex-col justify-between h-full">
+      <body className="flex flex-col justify-between min-h-screen w-full">
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"

@@ -11,7 +11,7 @@
   "projectsPage": {
     "projects": "Projects",
     "book-scanner": {
-      "title": "LivroScanner (React Native)",
+      "title": "Alexandria (React Native)",
       "link": "Go to Webiste",
       "github": "Go to GitHub",
       "BadgeStatus": "In development",
