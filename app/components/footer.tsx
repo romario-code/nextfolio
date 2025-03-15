@@ -15,7 +15,7 @@ import Link from "next/link";
 
 const YEAR = new Date().getFullYear();
 
-function SocialLink({ href, icon: Icon, size = 16 }) {
+function SocialLink({ href, icon: Icon, size = 24 }) {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
       <Icon size={size} />
